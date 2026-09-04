@@ -6,28 +6,85 @@
   <title>Game Exhibition</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">2027年度 未来創造展</p>
+      <h1>大澤チーム</h1>
+      <p class="lead"></p>
+    </div>
+      <div class="gallery">
+        <img src="images/main.png" alt="大澤写真 1" class="clickable-image">
+        <img src="images/main2.png" alt="大澤写真 2" class="clickable-image">
+      </div>
+  </header>
 
   <main>
-    <h1>2027年度未来創造展大澤チーム</h1>
+    <section class="section">
+      <h2>メインビジュアル</h2>
+      <img src="images/main.png" alt="メインビジュアル" class="showcase-image clickable-image">
+    </section>
 
-    <p>
-        2027年度未来創造展のリーダーです。Ciallo～(∠・ω< )⌒☆
-    </p>
+    <section class="section">
+      <h2>ゲーム理念</h2>
+      <p></p>
+    </section>
 
-    <img src="images/main.png" alt="Game image 1">
-    <img src="images/main2.png" alt="Game image 2">
+    <section class="section">
+      <h2>コンセプト</h2>
+      <p></p>
+    </section>
 
-    <h2>ゲーム理念</h2>
+    <section class="section">
+      <h2>ゲーム画面</h2>
+    
+    </section>
 
-    <h2>コンセプト</h2>
+    <section class="section">
+      <h2>特徴</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>FEATURE 01</h3>
+          <p></p>
+        </article>
+        <article class="card">
+          <h3>FEATURE 02</h3>
+          <p></p>
+        </article>
+        <article class="card">
+          <h3>FEATURE 03</h3>
+          <p></p>
+        </article>
+      </div>
+    </section>
 
-    <h2>ゲーム画面</h2>
+    <section class="section">
+      <h2>動画</h2>
+      <div class="video-wrap">
+        <video controls playsinline preload="metadata">
+          <source src="videos/movie.mp4" type="video/mp4">
+          
+        </video>
+      </div>
+      <p class="note">※ videos/movie.mp4 を置くと動画を表示できます。</p>
+    </section>
 
-    <h2>動画</h2>
-
+    <section class="section">
+      <h2>制作メンバー</h2>
+      <p>チーム名、担当、メンバー情報など。</p>
+    </section>
   </main>
 
+  <footer>
+    <p>2027年度 未来創造展</p>
+  </footer>
+
+  <div id="imageModal" class="modal" aria-hidden="true">
+    <button id="closeModal" class="close-button" aria-label="画像を閉じる">×</button>
+    <img id="modalImage" class="modal-image" alt="">
+    <a id="downloadImage" class="download-button" download>画像を保存</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
